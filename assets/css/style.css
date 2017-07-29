@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+	height: 100%;
+	margin: 0;
+}
+
+/*styles each h1 header, inluding name in header and title of 
+content on each page*/
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-family: Georgia;
+}
+
+/*colors the links and removes lines*/
+a {
+	color: #cccccc;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-image: url(../images/whirlpool.png);
+	/*position: relative;*/
+}
+
+/*styles the 'connect with me' header*/
+h3 {
+	font-size: 22px;
+	margin-bottom: 20px;
+	font-family: Georgia;
+	line-height: 20px;
+}
+
+/*styles the lines separating content in each box*/
+hr{
+    display: block;
+    position: relative;
+    padding: 5px;
+    margin: 5px auto;
+    width: 100%;
+    clear: both;
+    border: none;
+    border-top: 2px solid #dddddd;
+}
+
+li {
+	display: inline-block;
+}
+
+/*the header of each page, including name and navbar*/
+.header {
+	background: #ffffff;
+	padding: 0px 0px 0px 80px;
+	width: 100%;
+	height: 90px;
+	margin-bottom: 40px;
+	border-color: #cccccc;
+	border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+/*styles the navbar on each page*/
+.navbar {
+	float: left;
+	padding: 35px 0px 35px 410px;
+	font-family: Helvetica;
+	font-size: 18px;
+	color: #777777;
+}
+
+/*styles the box around my name inside the header*/
+.tealbox {
+	background: #4aaaa5;
+	text-align: center;
+	padding: 25px 30px 15px 30px;
+	height: 90px;
+	color: #ffffff;
+	float: left;
+	font-size: 36px;
+	font-family: Georgia;
+}
+
+/*colors the two headers that are teal*/
+.tealfont {
+	color: #4aaaa5;
+}
+
+/*sets the font styles in the body of the pages*/
+.bodytext {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 10px;
+}
+
+/*creating and styling the boxes containing the main content*/
+.main {
+	width: 960px;
+	margin-left: 80px;
+	height: 100%;
+	/*float: left;*/
+}
+
+.wrapper {
+  height: calc(100% - 130px);
+  /*margin-bottom: -130px; */
+}
+
+.cont {
+	background: #ffffff;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	width: 650px;
+	padding: 25px;
+	float: left;
+	/*position: absolute;*/
+}
+
+/*creating and styling the 'connect with me' box*/
+.connect {
+	float: left;
+	background: #ffffff;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1px;
+	padding: 25px;
+	width: 270px;
+}
+
+/*puts the margin around my image on the about me page*/
+.me {
+	float: left;
+	margin: 10px 25px 5px 0px;
+	/*position: relative;*/
+}
+
+/*arranging the links in the connect box*/
+.github {
+	width: 80px;
+	height: 80px; 
+	margin: -15px -10px -10px -10px;
+}
+
+.linkedin {
+	width: 70px;
+	height: 70px; 
+	padding: 5px;
+	margin: -15px -2px -5px -2px;
+}
+
+.stack {
+	width: 80px;
+	height: 80px; 
+	margin: -15px -15px -10px -15px;
+}
+
+/*styling the contact boxes*/
+.inputbox {
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1.25px;
+	width: 100%;
+	height: 30px;
+	margin: 5px 0px 15px 0px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	padding: 6px;
+}
+
+.message {
+	height: 150px;
+}
+
+.submit {
+	background: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+/*styling the inner portfolio images and text*/
+.port-img {
+	height: 144px;
+	width: 288px;
+	margin-top: 20px;
+}
+
+.textbanner {
+	width: 100%;
+	height: 55px;
+	background: #4aaaa5;
+	border: none;
+    color: white;
+    text-align: center;
+    padding: 18px 22px;
+    position: absolute;
+    top: 90px;
+}
+
+.pos {
+	position: relative;
+}
+
+.left {
+	float: left;
+}
+
+.right{
+	float: left;
+	margin-left: 20px;
+}
+
+/*.footer, .push {
+  height: 130px; 
+  width: 100%;
+}*/
+
+.footer {
+  background: #666666;
+  text-align: center;
+  padding-top: 50px;
+  border-top: 10px;
+  border-style: solid;
+  border-color: #4aaaa5;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #ffffff;
+  position: absolute;
+  height: 130px;
+  width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+
+    .navbar {
+		padding: 35px 0px 35px 180px;
+	}
+	.me {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.main {
+		height: 100%;
+	}
+
+	.cont {
+		width: 50%;
+	}
+
+	.connect {
+		width: 25%;
+	}
+
+	.right {
+		margin-left: 0px;
+	}
+
+	.port-img {
+		width: 100%;
+	}
+
+	.pos {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		padding: 0px 0px 0px 20px;
+	}
+
+    .navbar {
+		padding: 35px 0px 35px 120px;
+		margin: 0px;
+	}
+
+	.main {
+		width: 100%;
+		height: 100%;
+		margin: 0px 80px 0px 20px;
+		padding-right: 40px;
+	}
+
+	.cont {
+		width: 100%;
+	}
+
+	.connect {
+		width: 100%;
+	}
+
+	.me {
+		float: left;
+		margin: 10px 25px 5px 0px;
+		width: 45%;
+	}
+
+	.right {
+		margin-left: 20px;
+	}
+
+	.pos {
+		width: 48%;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+		background: #4aaaa5;
+		padding: 0px;
+		position: static;
+	}
+
+	.me {
+		width: 100%;
+	}
+
+	.tealbox {
+		text-align: center;
+		width: 100%;
+	}
+	
+	.pos {
+		width: 100%;
+		height: 100%;
+	}
+
+	.right {
+		margin-left: 0px;
+	}
+
+    .navbar {
+    	background: #ffffff;
+    	text-align: center;
+    	width: 100%;
+		padding: 20px 0px 20px 0px;
+		margin: -20px 0px 20px 0px;
+		border-color: #cccccc;
+		border-style: solid;
+    	border-width: 0px 0px 2px 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
